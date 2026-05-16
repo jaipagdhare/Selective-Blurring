@@ -1,0 +1,15 @@
+{
+  "similarity_allow": 0.34,
+  "similarity_blur": 0.28,
+  "instant_allow": 0.5,
+  "sim_ema_alpha": 0.45,
+  "detect_every": 2,
+  "min_face_px": 36,
+  "min_det_score": 0.45,
+  "max_missed": 12,
+  "allow_votes": 1,
+  "vote_window": 5,
+  "iou_match": 0.25,
+  "blur_kernel": 95,
+  "bbox_pad": 0.18
+}

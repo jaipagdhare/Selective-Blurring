@@ -1,0 +1,16 @@
+# Quick tune (~8 presets, ~3 min on CPU)
+python tune_blur.py --input try.mp4
+# Larger search + short preview clips for top 3
+python tune_blur.py --input try.mp4 --full-grid --render-top 3 --render-frames 300
+Results: tune_results/tune_results.csv, tune_results/best_config.json.
+
+Best preset from your video (all tied on accuracy; lowest flicker):
+
+python blur.py -i try.mp4 -o "try blurred v2.mp4" --config tune_results/best_config.json
+Or use the new defaults (already set in code):
+
+python blur.py -i try.mp4 -o "try blurred v2.mp4"
+
+
+build gallery
+python build_gallery.py     

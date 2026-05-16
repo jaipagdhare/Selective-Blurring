@@ -1,0 +1,30 @@
+*.mp4
+video/
+/video
+/home/jaip/Desktop/project/video_blur/try blurred v2.mp4
+
+
+cat << 'EOF' > .gitignore
+# --- Python & IDE ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# --- Video I/O (Large files - do not commit) ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# --- Generated data / ML ---
+tune_results/
+_review_frames/
+*.zip
+*.pt
+*.pth
+EOF
